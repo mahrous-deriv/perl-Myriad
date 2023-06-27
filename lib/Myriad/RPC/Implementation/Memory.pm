@@ -25,15 +25,15 @@ use Myriad::RPC::Message;
 
 with 'Myriad::Role::RPC';
 
-has $transport;
+field $transport;
 
-has $group_name;
+field $group_name;
 method group_name { $group_name //= 'processors' }
 
 
-has $should_shutdown;
-has $rpc_list;
-has $processing;
+field $should_shutdown;
+field $rpc_list;
+field $processing;
 
 method rpc_list { $rpc_list };
 
@@ -210,5 +210,5 @@ See L<Myriad/CONTRIBUTORS> for full details.
 
 =head1 LICENSE
 
-Copyright Deriv Group Services Ltd 2020-2022. Licensed under the same terms as Perl itself.
+Copyright Deriv Group Services Ltd 2020-2023. Licensed under the same terms as Perl itself.
 

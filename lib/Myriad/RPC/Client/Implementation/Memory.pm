@@ -20,12 +20,12 @@ Myriad::RPC::Client::Implementation::Memory
 use Myriad::Util::UUID;
 use Myriad::RPC::Message;
 
-has $transport;
-has $whoami;
-has $current_id;
-has $subscription;
-has $pending_requests;
-has $started;
+field $transport;
+field $whoami;
+field $current_id;
+field $subscription;
+field $pending_requests;
+field $started;
 
 BUILD {
     $whoami = Myriad::Util::UUID::uuid();
@@ -116,5 +116,5 @@ See L<Myriad/CONTRIBUTORS> for full details.
 
 =head1 LICENSE
 
-Copyright Deriv Group Services Ltd 2020-2022. Licensed under the same terms as Perl itself.
+Copyright Deriv Group Services Ltd 2020-2023. Licensed under the same terms as Perl itself.
 

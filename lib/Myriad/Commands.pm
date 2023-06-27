@@ -26,8 +26,8 @@ use Module::Runtime qw(require_module);
 use Myriad::Util::UUID;
 use Myriad::Service::Remote;
 
-has $myriad;
-has $cmd;
+field $myriad;
+field $cmd;
 
 BUILD (%args) {
     weaken(
@@ -213,4 +213,4 @@ See L<Myriad/CONTRIBUTORS> for full details.
 
 =head1 LICENSE
 
-Copyright Deriv Group Services Ltd 2020-2022. Licensed under the same terms as Perl itself.
+Copyright Deriv Group Services Ltd 2020-2023. Licensed under the same terms as Perl itself.

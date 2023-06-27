@@ -5,12 +5,12 @@ use Myriad::Class extends => 'IO::Async::Notifier', does => [ 'Myriad::Role::Sub
 # VERSION
 # AUTHORITY
 
-has $transport;
+field $transport;
 
-has $receivers;
+field $receivers;
 
-has $should_shutdown = 0;
-has $stopped;
+field $should_shutdown = 0;
+field $stopped;
 
 # FIXME Need to update :Defer for Object::Pad
 sub MODIFY_CODE_ATTRIBUTES { }
@@ -118,5 +118,5 @@ See L<Myriad/CONTRIBUTORS> for full details.
 
 =head1 LICENSE
 
-Copyright Deriv Group Services Ltd 2020-2022. Licensed under the same terms as Perl itself.
+Copyright Deriv Group Services Ltd 2020-2023. Licensed under the same terms as Perl itself.
 

@@ -23,12 +23,12 @@ use Myriad::RPC::Message;
 
 use constant DEFAULT_RPC_TIMEOUT_SECONDS => 30;
 
-has $redis;
-has $subscription;
-has $pending_requests;
-has $whoami;
-has $current_id;
-has $started;
+field $redis;
+field $subscription;
+field $pending_requests;
+field $whoami;
+field $current_id;
+field $started;
 
 BUILD {
     $pending_requests = {};
@@ -126,5 +126,5 @@ See L<Myriad/CONTRIBUTORS> for full details.
 
 =head1 LICENSE
 
-Copyright Deriv Group Services Ltd 2020-2022. Licensed under the same terms as Perl itself.
+Copyright Deriv Group Services Ltd 2020-2023. Licensed under the same terms as Perl itself.
 

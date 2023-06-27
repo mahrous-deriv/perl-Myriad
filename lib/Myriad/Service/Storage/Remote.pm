@@ -47,9 +47,9 @@ BEGIN {
 }
 
 
-has $prefix;
-has $storage;
-has $local_service_name;
+field $prefix;
+field $storage;
+field $local_service_name;
 method storage { $storage };
 method local_service_name { $local_service_name // 'local' };
 
@@ -91,6 +91,6 @@ See L<Myriad/CONTRIBUTORS> for full details.
 
 =head1 LICENSE
 
-Copyright Deriv Group Services Ltd 2020-2022. Licensed under the same terms as Perl itself.
+Copyright Deriv Group Services Ltd 2020-2023. Licensed under the same terms as Perl itself.
 
 

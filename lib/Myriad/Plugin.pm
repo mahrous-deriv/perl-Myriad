@@ -30,7 +30,7 @@ would proceed to load C<< Myriad::Plugin::Reverse >> and try again.
 # instances.
 our $REGISTRY = __PACKAGE__->new;
 
-has $plugin;
+field $plugin;
 
 =head1 METHODS
 
@@ -83,5 +83,5 @@ See L<Myriad/CONTRIBUTORS> for full details.
 
 =head1 LICENSE
 
-Copyright Deriv Group Services Ltd 2020-2022. Licensed under the same terms as Perl itself.
+Copyright Deriv Group Services Ltd 2020-2023. Licensed under the same terms as Perl itself.
 

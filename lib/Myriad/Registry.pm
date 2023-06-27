@@ -31,11 +31,11 @@ declare_exception UnknownClass => (
     message => 'Unable to locate the given class for component lookup',
 );
 
-has %rpc;
-has %service_by_name;
-has %batch;
-has %emitter;
-has %receiver;
+field %rpc;
+field %service_by_name;
+field %batch;
+field %emitter;
+field %receiver;
 
 =head2 add_service
 
@@ -245,5 +245,5 @@ See L<Myriad/CONTRIBUTORS> for full details.
 
 =head1 LICENSE
 
-Copyright Deriv Group Services Ltd 2020-2022. Licensed under the same terms as Perl itself.
+Copyright Deriv Group Services Ltd 2020-2023. Licensed under the same terms as Perl itself.
 

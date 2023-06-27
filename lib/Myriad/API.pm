@@ -24,10 +24,10 @@ use Myriad::Config;
 use Myriad::Service::Remote;
 use Myriad::Service::Storage;
 
-has $myriad;
-has $service_name;
-has $storage;
-has $config;
+field $myriad;
+field $service_name;
+field $storage;
+field $config;
 
 =head1 METHODS
 
@@ -94,5 +94,5 @@ See L<Myriad/CONTRIBUTORS> for full details.
 
 =head1 LICENSE
 
-Copyright Deriv Group Services Ltd 2020-2022. Licensed under the same terms as Perl itself.
+Copyright Deriv Group Services Ltd 2020-2023. Licensed under the same terms as Perl itself.
 

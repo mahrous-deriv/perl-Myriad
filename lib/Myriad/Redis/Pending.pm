@@ -17,11 +17,11 @@ Myriad::Redis::Pending
 
 =cut
 
-has $redis;
-has $stream;
-has $group;
-has $id;
-has $finished;
+field $redis;
+field $stream;
+field $group;
+field $id;
+field $finished;
 
 BUILD (%args) {
     $redis = $args{redis} // die 'need a redis';
@@ -62,5 +62,5 @@ See L<Myriad/CONTRIBUTORS> for full details.
 
 =head1 LICENSE
 
-Copyright Deriv Group Services Ltd 2020-2022. Licensed under the same terms as Perl itself.
+Copyright Deriv Group Services Ltd 2020-2023. Licensed under the same terms as Perl itself.
 
